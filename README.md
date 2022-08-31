@@ -78,7 +78,7 @@ python test.py --policy sarl --model_dir data/sarl_curr_div --phase test --env_c
 ```
 
 
-## Simulation Videos (SARL (diverse environment))
+## Simulation Videos (SARL (baseline) in diverse environment)
 Baseline Circle Crossing             | Baseline Square Crossing
 :-------------------------:|:-------------------------:
 <img src="https://i.imgur.com/8Ru0I1u.gif" width="400" />|<img src="https://i.imgur.com/zwRfDBB.gif" width="400" />
