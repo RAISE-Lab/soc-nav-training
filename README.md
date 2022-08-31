@@ -67,19 +67,14 @@ Optional: Train a policy in a diverse environment (will take 10+ hours).
 python train.py --policy sarl --env_config configs/env_multi-test_bl-cr.config
 ```
 
-Test policies over 50 test episodes with pretrained models.
+Test a policy over 50 test episodes with pretrained models.
 ```
 python test.py --policy orca --phase test --env_config configs/env_multi-test_bl-sq.config
-python test.py --policy sarl --model_dir data/output_transfer_sarl --phase test --env_config configs/env_multi-test_dn-sq.config
+python test.py --policy sarl --model_dir data/sarl_curr_div --phase test --env_config configs/env_multi-test_dn-sq.config
 ```
 Run a pretrained model for one episode and visualize the result.
 ```
-python test.py --policy sarl --model_dir data/output_lm_sarl --phase test --env_config configs/env_multi-test_lg-cr.config --visualize --test_case 0
-python test.py --policy sarl --model_dir data/output_multi_sarl --phase test --env_config configs/env_multi-test_lg-sq.config --visualize --test_case 0
-```
-Plot the training curves of the pretrained models: LM-SARL, SARL (diverse), and SARL (curriculum+diverse).
-```
-python utils/plot.py data/output_lm_sarl/output.log data/output_multi_sarl/output.log data/output_transfer_sarl/output.log
+python test.py --policy sarl --model_dir data/sarl_curr_div --phase test --env_config configs/env_multi-test_lg-cr.config --visualize --test_case 0
 ```
 
 
