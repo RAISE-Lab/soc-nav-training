@@ -1,0 +1,43 @@
+#================================
+# CrowdNav ======================
+# editors
+CrowdNav/.idea/
+CrowdNav/.vscode/
+
+# Python
+CrowdNav/*.egg-info/
+CrowdNav/.pytest_cache/
+CrowdNav/__pycache__
+CrowdNav/.cache/
+venv*/
+
+# data
+CrowdNav/data/
+**.mp4
+CrowdNav/videos/
+CrowdNav/crowd_nav/data/**.pth
+
+#================================
+# Python-RVO2 ===================
+# Compiled Object files
+Python-RVO2/*.slo
+Python-RVO2/*.lo
+Python-RVO2/*.o
+
+# Compiled Dynamic libraries
+Python-RVO2/*.so
+Python-RVO2/*.dylib
+
+# Compiled Static libraries
+Python-RVO2/*.lai
+Python-RVO2/*.la
+Python-RVO2/*.a
+
+# Python & Cython-generated files
+Python-RVO2/*.egg-info/
+Python-RVO2/__pycache__/
+Python-RVO2/build/
+Python-RVO2/src/rvo2.cpp
+
+rvo2_build_backup
+**/__pycache__/

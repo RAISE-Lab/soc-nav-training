@@ -1,0 +1,7 @@
+Cython==0.21.1
+gym==0.10.0
+matplotlib==3.3.4
+numpy==1.19.5
+setuptools==59.6.0
+torch==1.10.2
+pyqt5==5.15.6
