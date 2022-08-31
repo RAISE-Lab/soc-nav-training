@@ -92,4 +92,4 @@ SARL (baseline) (Collision)             | SARL (curriculum+diverse) (Avoids Coll
 ## Learning Curve
 Learning curve comparison between different training methods.
 
-<img src="https://i.imgur.com/SInXYTC.png" width="600" />
+<img src="https://i.imgur.com/QHpUPMl.png" width="600" />
