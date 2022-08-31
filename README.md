@@ -78,7 +78,7 @@ python test.py --policy sarl --model_dir data/sarl_curr_div --phase test --env_c
 ```
 
 
-## Simulation Videos (SARL (diverse))
+## Simulation Videos (SARL (diverse environment))
 Baseline Circle Crossing             | Baseline Square Crossing
 :-------------------------:|:-------------------------:
 <img src="https://i.imgur.com/8Ru0I1u.gif" width="400" />|<img src="https://i.imgur.com/zwRfDBB.gif" width="400" />
@@ -88,7 +88,7 @@ Baseline Circle Crossing             | Baseline Square Crossing
 <img src="https://i.imgur.com/SfKSlXZ.gif" width="400" />|<img src="https://i.imgur.com/D4453gj.gif" width="400" />  |  
 
 ## Collision Case in Dense Square Crossing
-LM-SARL (Collision)             | SARL (curriculum+diverse) (Avoids Collision)
+SARL (baseline) (Collision)             | SARL (curriculum+diverse) (Avoids Collision)
 :-------------------------:|:-------------------------:
 <img src="https://i.imgur.com/4AvnPd1.gif" width="400" />|<img src="https://i.imgur.com/d7l7rNI.gif" width="400" />
 
