@@ -13,9 +13,6 @@ Autonomous mobile robots are increasingly expanding into human spaces. In order 
 
 Modifications and additions were made to almost every file and folder in `CrowdNav/crowd_nav/`. Major modifications were made to `CrowdNav/crowd_sim/crowd_sim.py`, and minor modifications were made to files in `CrowdNav/crowd_sim/utils/`. Succinct, but crucial modifications were made in `CrowdNav/crowd_sim/policy/` and especialy in `CrowdNav/crowd_sim/policy/socialforce/`. -->
 
-## Method Overview (Figure from [[Chen et al.](https://github.com/vita-epfl/CrowdNav)])
-<img src="https://i.imgur.com/YOPHXD1.png" width="1000" />
-
 ## Setup
 The code in this repository is based on Python 3.6. It is recommended to create a virtualenv. The following steps were tested in Ubuntu 20.04.
 
