@@ -1,6 +1,5 @@
 # Improving Generalization in Reinforcement Learning Training Regimes for Social Robot Navigation
-
-Our [Paper]([url](https://arxiv.org/pdf/2308.14947)) was accepted at the [Generalization in Planning]([url](https://aair-lab.github.io/genplan23/)) workshop at NeurIPS 2023!
+_Our [paper](https://arxiv.org/pdf/2308.14947) was included at the [Generalization in Planning workshop](https://aair-lab.github.io/genplan23/)  at NeurIPS 2023!_
 
 
 
