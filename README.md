@@ -1,17 +1,26 @@
-# Improving Reinforcement Learning Training Regimes for Social Robot Navigation
+# Improving Generalization in Reinforcement Learning Training Regimes for Social Robot Navigation
 
-The code in this repository is based on **Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning** [[Paper](https://arxiv.org/abs/1809.08835)], [[GitHub](https://github.com/vita-epfl/CrowdNav)]. This repository contains all of the code of Python-RVO2 (`soc-nav-training/Python-RVO2/`) [[GitHub](https://github.com/sybrenstuvel/Python-RVO2)], the official implementation of ORCA [[Paper](https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf)], used in Chen et al.'s original work. This repository also contains code based on Deep Social Force (`soc-nav-training/CrowdNav/crowd_sim/envs/policy/socialforce/`) [[Paper](https://arxiv.org/abs/2109.12081)], [[GitHub](https://github.com/svenkreiss/socialforce)] (version 0.1.0).
-<!-- It would have been a fork from their repository, but technical difficulties caused me to create a separate one containing mainly their code, but also others.  -->
+Our [Paper]([url](https://arxiv.org/pdf/2308.14947)) was accepted at the [Generalization in Planning]([url](https://aair-lab.github.io/genplan23/)) workshop at NeurIPS 2023!
 
-<!-- I know that you instructed us to not copy entire repositories of code, but RVO2 gave me a lot of trouble in installation, so having the whole thing in this repository will greatly simplify things. I discussed this with you in class and you said it was acceptable.  -->
 
 
 ## Abstract
-In order for autonomous mobile robots to navigate in human spaces, they must abide by our social norms. Reinforcement learning (RL) has emerged as an effective method to train robot navigation policies that are able to respect these norms. However, a large portion of existing work in the field conducts both RL training and testing in simplistic environments. This limits the generalization potential of these models to unseen environments, and the meaningfulness of their reported results. We propose a method to improve the generalization performance of RL social navigation methods using curriculum learning. By employing multiple environment types and by modeling pedestrians using multiple dynamics models, we are able to progressively diversify and escalate difficulty in training. Our results show that the use of curriculum learning in training can be used to achieve better generalization performance than previous training methods. We also show that results presented in many existing state-of-the art RL social navigation works do not evaluate their methods outside of their training environments, and thus do not reflect their policies' failure to adequately generalize to out-of-distribution scenarios. In response, we validate our training approach on larger and more crowded testing environments than those used in training, allowing for more meaningful measurements of model performance.
+
+In order for autonomous mobile robots to navigate in human spaces, they must abide by our social norms. Reinforcement learning (RL) has emerged as an effective method to train sequential decision-making policies that are able to respect these norms. However, a large portion of existing work in the field conducts both RL training and testing in simplistic environments. This limits the generalization potential of these models to unseen environments, and the meaningfulness of their reported results. We propose a method to improve the generalization performance of RL social navigation methods using curriculum learning. By employing multiple environment types and by modeling pedestrians using multiple dynamics models, we are able to progressively diversify and escalate difficulty in training. Our results show that the use of curriculum learning in training can be used to achieve better generalization performance than previous training methods. We also show that results presented in many existing state-of-the-art RL social navigation works do not evaluate their methods outside of their training environments, and thus do not reflect their policies' failure to adequately generalize to out-of-distribution scenarios. In response, we validate our training approach on larger and more crowded testing environments than those used in training, allowing for more meaningful measurements of model performance.
+
+
+
+## External Code Usage
 
 <!-- ### Files Changed
 
-Modifications and additions were made to almost every file and folder in `CrowdNav/crowd_nav/`. Major modifications were made to `CrowdNav/crowd_sim/crowd_sim.py`, and minor modifications were made to files in `CrowdNav/crowd_sim/utils/`. Succinct, but crucial modifications were made in `CrowdNav/crowd_sim/policy/` and especialy in `CrowdNav/crowd_sim/policy/socialforce/`. -->
+The novel work in this project is mainly in `CrowdNav/crowd_nav/`. Major modifications were made to `CrowdNav/crowd_sim/crowd_sim.py`, and minor modifications were made to files in `CrowdNav/crowd_sim/utils/`. Succinct, but crucial modifications were made in `CrowdNav/crowd_sim/policy/` and especially in `CrowdNav/crowd_sim/policy/socialforce/`. -->
+
+External code is included in this repository. This was done to streamline adherence to McGill's evaluation process. The novel work in this project is built upon **Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning** [[Paper](https://arxiv.org/abs/1809.08835)], [[GitHub](https://github.com/vita-epfl/CrowdNav)]. The bulk of this work was done in the `CrowdNav/crowd_sim/`.
+
+Additionally, this repository contains Python-RVO2 (`soc-nav-training/Python-RVO2/`) [[GitHub](https://github.com/sybrenstuvel/Python-RVO2)], the official implementation of ORCA [[Paper](https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf)], used in Chen et al.'s original work. This repository also contains code based on Deep Social Force (`soc-nav-training/CrowdNav/crowd_sim/envs/policy/socialforce/`) [[Paper](https://arxiv.org/abs/2109.12081)], [[GitHub](https://github.com/svenkreiss/socialforce)] (version 0.1.0).
+<!-- It would have been a fork from their repository, but technical difficulties caused me to create a separate one containing mainly their code, but also others.  -->
+
 
 ## Setup
 The code in this repository is based on Python 3.6. It is recommended to create a virtualenv. The following steps were tested in Ubuntu 20.04.
